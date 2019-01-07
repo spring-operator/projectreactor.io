@@ -1,5 +1,5 @@
-/*
- * Copyright (c) 2011-2017 Pivotal Software Inc, All Rights Reserved.
+/*!
+ * Copyright (c) 2011-2018 Pivotal Software Inc, All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -177,13 +177,20 @@ body {
   color: white;
   .footer-content {
     background: #423e3c;
-    padding: 2em 0 2.5em;
+    padding: 1em 0 1em;
+  }
+  .footer-note {
+    text-align: center;
+    color: rgba(255,255,255,.3);
+    display: block;
+    font-size: 0.9em;
+    padding: 0.4em 0;
   }
   .footer-content-text {
     @include clearfix();
     @extend .container;
     max-width: 1100px;
-    padding: 2em 1.5em;
+    padding: 1em 0.5em;
     .licence {
       color: rgba(255,255,255,.3);
       display: block;
@@ -235,7 +242,7 @@ section#welcome {
   font-size: 1.2em;
   height: 360px;
   font-family: $reactorFontSpecial;
-  background: #e5e2b6 url('../img/homepage-bg.jpg') no-repeat center 0;
+  background:  url(../img/homepage-bg.png) center 0 no-repeat rgb(147, 173, 160);
   article {
     color: white;
     text-align: center;
@@ -570,11 +577,8 @@ section#key-features {
     &.friendly-adoption {
       background: white;
       div {
-        padding-right: 20px;
-        padding-left: 350px;
-        text-align: right;
-        background: white url('../img/friendlyadoption-bg.jpg') no-repeat left center;
-        background-size: 360px 385px;
+        background: white url('../img/friendlyadoption-bg.jpg') no-repeat right;
+        background-size: 360px 391px;
       }
       //background: #ebf1e7;
     }
